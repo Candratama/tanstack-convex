@@ -8,7 +8,13 @@
  * @module
  */
 
+import type * as _types_mayar from "../_types/mayar.js";
+import type * as adminActions from "../adminActions.js";
+import type * as mayar from "../mayar.js";
 import type * as myFunctions from "../myFunctions.js";
+import type * as paymentTransactions from "../paymentTransactions.js";
+import type * as subscriptions from "../subscriptions.js";
+import type * as users from "../users.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +23,13 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  "_types/mayar": typeof _types_mayar;
+  adminActions: typeof adminActions;
+  mayar: typeof mayar;
   myFunctions: typeof myFunctions;
+  paymentTransactions: typeof paymentTransactions;
+  subscriptions: typeof subscriptions;
+  users: typeof users;
 }>;
 
 /**
